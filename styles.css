@@ -1,0 +1,124 @@
+
+body {
+    font-family: 'Georgia', serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fdf6e3; 
+    color: #333; 
+}
+
+header {
+    background: #8B4513; 
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #d2b48c; 
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: #d2b48c; 
+    text-decoration: underline; 
+}
+
+main {
+    padding: 20px; 
+    max-width: 800px; 
+    margin: auto; 
+    background-color: #fff; 
+    border: 1px solid #d2b48c; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #dba97d; 
+    font-family: 'Times New Roman', serif; 
+}
+
+h2,h3 {
+    color: #8B4513; 
+    font-family: 'Times New Roman', serif; 
+}
+
+footer {
+    text-align: center; 
+    padding: 10px 0;
+    background: #8B4513; 
+    color: #fff; 
+    border-top: 5px solid #d2b48c; 
+}
+
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; 
+        margin: 10px 0; 
+    }
+}
+
+.responsive-image {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; 
+    max-width: 400px; 
+    margin: auto; 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border: 1px solid #d2b48c; 
+    border-radius: 10px; 
+}
+
+form label {
+    margin: 5px 0; 
+    font-weight: bold; 
+}
+
+form input, form textarea {
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+form button {
+    background: #8B4513; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: background 0.3s; 
+}
+
+form button:hover {
+    background: #d2b48c; 
+}
+
+
+h1, h2, h3 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
