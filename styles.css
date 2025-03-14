@@ -40,7 +40,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px; 
-    max-width: 800px; 
+    max-width: 1200px; 
     margin: auto; 
     background-color: #fff; 
     border: 1px solid #d2b48c; 
@@ -67,17 +67,57 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 1920px) {
+    nav ul li {
+        display: inline; 
+    }
+
+    main {
+        padding: 40px; 
+    }
+}
+
+
+@media (max-width: 1280px) {
+    nav ul li {
+        display: inline-block; 
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 30px; 
+    }
+}
+
+
+@media (max-width: 640px) {
     nav ul li {
         display: block; 
         margin: 10px 0; 
     }
+
+    main {
+        padding: 15px; 
+    }
+
+    header {
+        padding: 15px; 
+    }
 }
 
-.responsive-image {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
+
+button {
+    background: #8B4513; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    border-radius: 4px;
+    transition: background 0.3s; 
+}
+
+button:hover {
+    background: #d2b48c; 
 }
 
 
@@ -86,7 +126,7 @@ form {
     flex-direction: column; 
     max-width: 400px; 
     margin: auto; 
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     padding: 20px; 
     border: 1px solid #d2b48c; 
     border-radius: 10px; 
@@ -119,6 +159,8 @@ form button:hover {
 }
 
 
-h1, h2, h3 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+.responsive-image {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
 }
